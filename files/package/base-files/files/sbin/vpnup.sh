@@ -11,7 +11,7 @@ if [ ! -f "$file" ]; then
 	if [ $(grep 0.0.0.0 /etc/stunnel/stunnel.temp) ]; then
 		exit 0
 	else
-		cp -r /etc/stunnel/stunnel.temp /etc/stunnel/stunnel.conf
+	#	cp -r /etc/stunnel/stunnel.temp /etc/stunnel/stunnel.conf
 		killall -9 stunnel
 		/etc/init.d/stunnel start
 		rtab.sh
