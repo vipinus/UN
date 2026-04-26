@@ -75,3 +75,5 @@ jobs:
       with:
         name: OpenWrt
         path: openwrt/bin
+
+        retention-days: 1
